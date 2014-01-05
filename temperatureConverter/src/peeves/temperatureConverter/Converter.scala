@@ -2,14 +2,10 @@ package peeves.temperatureConverter
 
 object Converter {
     
-	def ask(): Unit = {
-	    print("Type \'F\'to convert to Fahrenheit, and \'C\' for Celsius: ")
-	}
-    
     def main(args: Array[String]): Unit = {
 		println("TEMPERATURE CONVERTER")
 		println("~~~~~~~~~~~~~~~~~~~~~")
-		ask()
+		print("Type \'F\'to convert to Fahrenheit, and \'C\' for Celsius: ")
 	    val fc = readChar.toString()
 	    if(fc.toUpperCase() == "F") {
 	        println("You selected to convert to Fahrenheit.")
